@@ -1,5 +1,9 @@
 # reactome_to_celldesigner_converter
 
+## Script purpose: convert Reactome SBML files into CellDesigner SBML files.
+## Date: 27.04.2024
+## Author: Luiz Ladeira
+
 Simple Reactome to CellDesigner converter using the minervar package
 
 Download Reactome pathways as SBML files.
