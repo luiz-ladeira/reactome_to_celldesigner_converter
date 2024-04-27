@@ -2,6 +2,14 @@
 ### Luiz Ladeira - University of Liège
 ### lcladeira@uliege.be
 
+### Install all the missing R packages
+required.packages <- c("devtools", "dplyr", "enrichR", "httr", "igraph", "jsonlite", "xml2")
+new.packages <- required.packages[!(required.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos='http://cran.us.r-project.org')
+
+
+### Load the 'minervar' package
+devtools::install_git(url = "https://gitlab.lcsb.uni.lu/minerva/minervar")
 
 # Load required library
 library(minervar)
