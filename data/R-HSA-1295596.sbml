@@ -1,0 +1,1783 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <notes>
+    <annotation>
+      <p xmlns="http://www.w3.org/1999/xhtml">SBML generated from Reactome version 88 on 4/27/24, 4:10 PM using JSBML version 1.5.</p>
+    </annotation>
+  </notes>
+  <model id="pathway_1295596" metaid="metaid_0" name="Spry regulation of FGF signaling">
+    <notes>
+      <p xmlns="http://www.w3.org/1999/xhtml">Sprouty was initially characterized as a negative regulator of FGFR signaling in Drosophila. Human cells contain four genes encoding Sprouty proteins, of which Spry2 is the best studied and most widely expressed. Spry proteins modulate the duration and extent of signaling through the MAPK cascade after FGF stimulation, although the mechanism appears to depend on the particular biological context. Some studies have suggested that Sprouty binds to GRB2 and interferes with the recruitment of GRB2-SOS1 to the receptor, while others have shown that Sprouty interferes with the MAPK cascade at the level of RAF activation. In addition to modulating the MAPK pathway in response to FGF stimulation, Sprouty itself appears to be subject to complex post-translational modification that regulates its activity and stability.</p>
+    </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+        <rdf:Description rdf:about="#metaid_0">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Rothfels</vCard:Family>
+                  <vCard:Given>Karen</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>OICR</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Rothfels</vCard:Family>
+                  <vCard:Given>Karen</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>OICR</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Wright</vCard:Family>
+                  <vCard:Given>Adam</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>OICR</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+          </dcterms:modified>
+          <bqbiol:is>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295596" />
+            </rdf:Bag>
+          </bqbiol:is>
+          <bqbiol:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:19570949" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:9458049" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:16893902" />
+              <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+            </rdf:Bag>
+          </bqbiol:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfCompartments>
+      <compartment constant="true" id="compartment_876" metaid="metaid_2" name="plasma membrane" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_2">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005886" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+      <compartment constant="true" id="compartment_70101" metaid="metaid_5" name="cytosol" sboTerm="SBO:0000290">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_5">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0005829" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_934578" metaid="metaid_1" name="PP2A(A:C):S112/S121-pSPRY2 [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_1">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934578" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-934578" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934578" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_934550" metaid="metaid_3" name="PP2A(A:C):SPRY2 [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_3">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934550" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-934550" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934550" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1295587" metaid="metaid_4" name="S111/S120 p-SPRY2:B-RAF [cytosol]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P15056, O43597). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_4">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295587" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P15056" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-1295587" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295587" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_1295625" metaid="metaid_6" name="PPA2A (A:C):Y55/Y227 p-SPRY2:GRB2 [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P62993, O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_6">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295625" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62993" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295625" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-1295625" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_934576" metaid="metaid_7" name="Y55/Y227-pSPRY2:CBL [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P22681, O43597). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_7">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934576" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P22681" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-934576" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934576" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29370" metaid="metaid_8" name="ADP [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_8">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:456216" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29370" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_113595" metaid="metaid_9" name="Ub [cytosol]">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome DefinedSet. This is a list of alternative entities, any of which can perform the given function</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_9">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-113595" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG48" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG47" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62987" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62979" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-113595" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-939203" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-9033758" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-PFA-113595" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1295598" metaid="metaid_10" name="SPRY2:B-RAF [cytosol]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P15056, O43597). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_10">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295598" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P15056" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-1295598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295598" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_167224" metaid="metaid_11" name="BRAF [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_11">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P15056" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-167224" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-167224" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-167224" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_112199" metaid="metaid_12" name="CBL [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_12">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P22681" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-112199" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-112199" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-PFA-112199" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_934598" metaid="metaid_13" name="PP2A(A:C):Y55/Y227-pSPRY2 [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_13">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934598" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934598" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-934598" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_1370875" metaid="metaid_14" name="Ub-(Y55/Y227)p-SPRY2 [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (9xP0CG48, 3xP0CG47, P62987, O43597, P62979). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_14">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1370875" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG48" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG47" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62987" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62979" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-1370875" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1370875" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_74686" metaid="metaid_15" name="GRB2-1 [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_15">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62993" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-74686" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-9029108" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-74686-2" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-74686-3" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-74686" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-74686" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1295590" metaid="metaid_16" name="p-S111,S120-SPRY2 [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_16">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295590" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasVersion>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/ols/ontologies/mod/terms?obo_id=MOD:00046" />
+                </rdf:Bag>
+              </bqbiol:hasVersion>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-1295590" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295590" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1295593" metaid="metaid_17" name="PPA2A(A:C):SPRY2 [cytosol]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_17">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295593" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-1295593" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295593" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_162563" metaid="metaid_18" name="PTPN11 [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_18">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/Q06124" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-162563" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-162563" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-162563" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_29372" metaid="metaid_19" name="Pi [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_19">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:43474" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-29372" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_934544" metaid="metaid_20" name="PP2A (A:C) [cytosol]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_20">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934544" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934544" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-934544" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1268261" metaid="metaid_21" name="p-T,Y MAPK dimers [cytosol]">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome DefinedSet. This is a list of alternative entities, any of which can perform the given function</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_21">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1268261" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P28482" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P27361" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-109855" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-109855" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DDI-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SPO-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SCE-1268261" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-PFA-1268261" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_65043" metaid="metaid_22" name="SRC-1 [plasma membrane]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_22">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P12931" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-65043" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-65043" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CEL-65043" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_113592" metaid="metaid_23" name="ATP [cytosol]" sboTerm="SBO:0000247">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome SimpleEntity. This is a small compound</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_23">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/CHEBI:30616" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-ALL-113592" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_876" constant="false" hasOnlySubstanceUnits="false" id="species_934572" metaid="metaid_24" name="Ub:Y55/Y227-pSPRY2:CBL [plasma membrane]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (P22681, 9xP0CG48, 3xP0CG47, P62987, O43597, P62979). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_24">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934572" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P22681" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG48" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P0CG47" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62987" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62979" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-GGA-934572" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-934572" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_1295605" metaid="metaid_25" name="PPA2A (A:C):S112/S115 p-SPRY2 [cytosol]" sboTerm="SBO:0000253">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome Complex. Here is Reactomes nested structure for this complex: (O43597, P67775, P62714, P30153). Reactome uses a nested structure for complexes, which cannot be fully represented in SBML Level 3 Version 1 core</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_25">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295605" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/O43597" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P67775" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P62714" />
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/P30153" />
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DRE-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-1295605" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-1295605" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="compartment_70101" constant="false" hasOnlySubstanceUnits="false" id="species_947860" metaid="metaid_26" name="p-T250,T255,T385,S437-MKNK1 [cytosol]" sboTerm="SBO:0000297">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Derived from a Reactome EntityWithAccessionedSequence. This is a protein</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_26">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://purl.uniprot.org/uniprot/Q9BUB5" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-947860" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:hasVersion>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/ols/ontologies/mod/terms?obo_id=MOD:00047" />
+                  <rdf:li rdf:resource="https://www.ebi.ac.uk/ols/ontologies/mod/terms?obo_id=MOD:00046" />
+                </rdf:Bag>
+              </bqbiol:hasVersion>
+              <bqbiol:isHomologTo>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-MMU-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-RNO-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-CFA-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-BTA-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-SSC-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-XTR-947860" />
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-DME-947860" />
+                </rdf:Bag>
+              </bqbiol:isHomologTo>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295632" metaid="metaid_27" name="PPA2A dephosphorylates SPRY2" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">In unstimulated cells, SPRY2 has been shown to be phosphorylated on multiple serine and threonine residues. In these cells, SPRY2 exists in a complex with the regulatory and catalytic subunits (A and C, respectively) of the serine/threonine phosphatase PP2A. After stimulation with FGF, the catalytic activity of PP2A increases and the phosphatase dephophorylates SPRY at serine 112 and serine 115. This is thought to promote changes in tertiary structure that promote GRB2 binding and phosphorylation of Y55 and Y227.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_27">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295632" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:17255109" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295632" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004722" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.1.3.16" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295632_input_1295605" sboTerm="SBO:0000010" species="species_1295605" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295632_output_1295593" sboTerm="SBO:0000011" species="species_1295593" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295632_output_29372" sboTerm="SBO:0000011" species="species_29372" stoichiometry="2" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_1295632_catalyst_1295605" sboTerm="SBO:0000013" species="species_1295605" />
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295609" metaid="metaid_28" name="SRC phosphorylates SPRY2 on Y55 and Y227" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Sprouty 2 protein is phosphorylated on tyrosine residue 55. The ability of SRC kinase to catalyze this reaction has been demonstrated with purified proteins in vitro (Li et al. 2004) and in cultured cells with studies of the effects of SRC-family pharmacological inhibitors and of dominant-negative mutant SRC proteins (Rubin et al, 2005). SRC kinase also phosphorylates numerous tyrosine residues in the C terminal region of SPRY2 including Y227, in response to FGF but not EGF stimulation (Rubin et al, 2005; Fong et al, 2003). SRC-mediated phosphorylation of SPRY2 at Y55 is negatively regulated by MNK1-dependent serine phosphorylation of SPRY2. MNK1-mediated SPRY2 phosphorylation stabilizes SPRY2 by antagonizing tyrosine phosphorylation and CBL binding, thus limiting ubiquitin-mediated degradation (Da Silva et al, 2006).</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_28">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295609" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:15564375" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12815057" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:15637081" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16479008" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295609" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004713" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.7.10.2" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295609_input_934550" sboTerm="SBO:0000010" species="species_934550" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295609_input_113592" sboTerm="SBO:0000010" species="species_113592" stoichiometry="2" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295609_output_934598" sboTerm="SBO:0000011" species="species_934598" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295609_output_29370" sboTerm="SBO:0000011" species="species_29370" stoichiometry="2" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_1295609_catalyst_65043" sboTerm="SBO:0000013" species="species_65043" />
+          <modifierSpeciesReference id="modifierspeciesreference_1295609_negativeregulator_934578" sboTerm="SBO:0000020" species="species_934578">
+            <notes>
+              <p xmlns="http://www.w3.org/1999/xhtml">This describes an Event/CatalystActivity that is negatively regulated by the Regulator (e.g., allosteric inhibition, competitive inhibition</p>
+            </notes>
+          </modifierSpeciesReference>
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295634" metaid="metaid_29" name="SPRY2 is serine phosphorylated in response to MAPK activation" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Some evidence suggests that SPRY2 can exert its negative role on FGF signaling at the level of RAF activation. Hypophosphorylated SPRY2 binds to inactive B-RAF, preventing it from activating ERK signaling. MAPK activation results in phosphorylation of SPRY2 on six serine residues (S7, S42, S111, S120, S140 and S167), and inhibits B-RAF binding. Phosphorylation of serine residues 111 and 120 on SPRY2 requires MAPK activation, however the identity of the phosphorylating kinase has not been established. Phosphorylation at these two site (S111 and S120) directly affects B-RAF binding while the remaining four sites appear to contribute indirectly. Oncogenic forms of B-RAF such as B-RAF V600E, which adopt active kinase conformations, do not associate with SPRY2, regardless of its phosphorylation status. This suggests that two mechanisms affect the SPRY2:B-RAF interaction: SPRY2 phosphorylation and B-RAF conformation.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_29">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295634" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11698404" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295634" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295634_input_1295598" sboTerm="SBO:0000010" species="species_1295598" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295634_output_1295587" sboTerm="SBO:0000011" species="species_1295587" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_1295634_positiveregulator_1268261" sboTerm="SBO:0000459" species="species_1268261">
+            <notes>
+              <p xmlns="http://www.w3.org/1999/xhtml">This describes an Event/CatalystActivity that is positively regulated by the Regulator (e.g., allosteric activation)</p>
+            </notes>
+          </modifierSpeciesReference>
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295613" metaid="metaid_30" name="SPRY2 binds GRB2" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">Some evidence suggests that SPRY2 may exert its negative effect by binding to GRB2 and competing with the GRB2:SOS1 interaction that is required for MAPK activation. SPRY2 phosphorylation at Y55 is stimulated in response to both FGF and EGF, and is required for SPRY2 to act as a negative regulator of FGF signaling. Y55 is not thought to be a GRB2 binding site, however. Instead, phosphorylation at Y55 is thought to cause a conformational change in SPRY2 that reveals a cryptic PXXPXPR GRB2-docking site in the C-terminal of SPRY2.SPRY2 has also been shown to be phosphorylated at multiple tyrosine residues in its C-terminal in response to FGF, but not EGF, stimulation. This phosphorylation, in particular at residue 227, is thought to augment the ability of SPRY2 to inhibit FGF signaling through the MAPK cascade, although the mechanism remains to be elucidated.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_30">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295613" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16893902" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:15637081" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295613" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295613_input_934598" sboTerm="SBO:0000010" species="species_934598" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295613_input_74686" sboTerm="SBO:0000010" species="species_74686" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295613_output_1295625" sboTerm="SBO:0000011" species="species_1295625" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295621" metaid="metaid_31" name="CBL dissociates from ubiquitinated p-SPRY2" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">After ubiquitination, CBL dissociates from SPRY2</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_31">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295621" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12593796" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12593795" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295621" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295621_input_934572" sboTerm="SBO:0000010" species="species_934572" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295621_output_1370875" sboTerm="SBO:0000011" species="species_1370875" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295621_output_112199" sboTerm="SBO:0000011" species="species_112199" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1549564" metaid="metaid_32" name="PPTN11 dephosphorylates SPRY2" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">PPTN11 (also known as SHP2) may exert its positive effects on MAPK activation in response to FGF stimulation by catalyzing the dephosphorylation of tyrosine resides on SPRY2. This dephosphorylation promotes dissociation of the GRB2/SPRY2 complex and as a consequence stimulates GRB2 association with the activated receptor, leading to sustained MAPK signaling.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_32">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-30T04:39:44Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-07T23:07:40Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1549564" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:15031289" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:17993263" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1549564" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004725" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:3.1.3.48" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1549564_input_1295625" sboTerm="SBO:0000010" species="species_1295625" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1549564_output_934598" sboTerm="SBO:0000011" species="species_934598" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1549564_output_74686" sboTerm="SBO:0000011" species="species_74686" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_1549564_catalyst_162563" sboTerm="SBO:0000013" species="species_162563" />
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295599" metaid="metaid_33" name="SPRY2 translocates to the plasma membrane" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">SPRY2 translocates to the plasma membrane upon activation of cells with FGF, and translocation is required for the inhibition of growth factor-stimulated cell migration, proliferation and differentiation. Translocation may be mediated by interactions with PIP2 in the membrane, palmitoylation of the C-terminal region of SPRY2 and/or interactions with caveolin-1.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_33">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295599" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11279012" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11238463" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:10887178" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12391162" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295599" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295599_input_1295593" sboTerm="SBO:0000010" species="species_1295593" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295599_output_934550" sboTerm="SBO:0000011" species="species_934550" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295622" metaid="metaid_34" name="SPRY2 binds CBL" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">The N terminal TKB domain of CBL binds to the phospho-tyrosine 55 of SPRY2, targeting SPRY2 for degradation by the 26S proteasome. Y55 is also a binding site for PP2A, which dephosphorylates numerous serine and threonine residues on SPRY2, allowing a conformational change that may promote a SPRY2:GRB2 interaction and limit the extent of MAPK activation following FGF stimulation.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_34">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295622" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12815057" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12593796" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:11053437" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295622" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295622_input_934598" sboTerm="SBO:0000010" species="species_934598" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295622_input_112199" sboTerm="SBO:0000010" species="species_112199" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295622_output_934544" sboTerm="SBO:0000011" species="species_934544" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295622_output_934576" sboTerm="SBO:0000011" species="species_934576" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_1295604" metaid="metaid_35" name="B-RAF dissociates from S111/S120 p-SPRY2" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">MAPK-dependent serine phosphorylation of SPRY2 disrupts complex formation with B-RAF.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_35">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Rothfels</vCard:Family>
+                      <vCard:Given>Karen</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-05-18T01:02:00Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2011-08-15T18:39:26Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295604" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-1295604" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_1295604_input_1295587" sboTerm="SBO:0000010" species="species_1295587" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_1295604_output_1295590" sboTerm="SBO:0000011" species="species_1295590" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_1295604_output_167224" sboTerm="SBO:0000011" species="species_167224" stoichiometry="1" />
+        </listOfProducts>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_934604" metaid="metaid_36" name="Phosphorylated SPRY2 is ubiquitinated by CBL" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">In humans, the phosphorylated adaptor protein Sprouty2 is ubiquitinated by the E3 ubiquitin ligase CBL, marking it for degradation by the 26S proteasome.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_36">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Williams</vCard:Family>
+                      <vCard:Given></vCard:Given>
+                    </vCard:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Williams</vCard:Family>
+                      <vCard:Given></vCard:Given>
+                    </vCard:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2010-08-17T19:25:33Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2010-08-17T19:09:06Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934604" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12593795" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:12593796" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934604" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0061630" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_934604_input_934576" sboTerm="SBO:0000010" species="species_934576" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_934604_input_113595" sboTerm="SBO:0000010" species="species_113595" stoichiometry="1" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_934604_output_934572" sboTerm="SBO:0000011" species="species_934572" stoichiometry="1" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_934604_catalyst_934576" sboTerm="SBO:0000013" species="species_934576" />
+        </listOfModifiers>
+      </reaction>
+      <reaction compartment="compartment_70101" fast="false" id="reaction_934559" metaid="metaid_37" name="SPRY2 is phosphorylated by phosphorylated MNK1" reversible="false">
+        <notes>
+          <p xmlns="http://www.w3.org/1999/xhtml">In humans, the phosphorylated MNK1 kinase phosphorylates the adaptor protein Sprouty2 on Ser112 and Ser121, and also at some other serine and threonine residues. MNK1 appears not to form a complex with Sprouty2. Some of these (including the two main sites mentioned above) conform to the serine-containing consensus sites for phosphorylation by MNK1 kinase (K/R-X-X-S, R-X-S). It appears that serine phosphorylation is required to protect Sprouty2 from degradation.In the absence of serine phosphorylation, phosphorylation of Tyr55 and subsequent binding to E3 ubiquitin ligase, CBL, is enhanced. Serine phosphorylation of Sprouty2 appears to stabilise the protein by interfering with its potential phosphorylation of Tyr55 (Sprouty2 appears to be a poor substrate for c-Src kinase) in response to growth factor stimulation.</p>
+        </notes>
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+            <rdf:Description rdf:about="#metaid_37">
+              <dc:creator>
+                <rdf:Bag>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Williams</vCard:Family>
+                      <vCard:Given></vCard:Given>
+                    </vCard:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Williams</vCard:Family>
+                      <vCard:Given></vCard:Given>
+                    </vCard:N>
+                  </rdf:li>
+                  <rdf:li rdf:parseType="Resource">
+                    <vCard:N rdf:parseType="Resource">
+                      <vCard:Family>Wright</vCard:Family>
+                      <vCard:Given>Adam</vCard:Given>
+                    </vCard:N>
+                    <vCard:ORG rdf:parseType="Resource">
+                      <vCard:Orgname>OICR</vCard:Orgname>
+                    </vCard:ORG>
+                  </rdf:li>
+                </rdf:Bag>
+              </dc:creator>
+              <dcterms:created rdf:parseType="Resource">
+                <dcterms:W3CDTF>2010-08-17T19:25:33Z</dcterms:W3CDTF>
+              </dcterms:created>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2024-03-08T00:34:28Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <dcterms:modified rdf:parseType="Resource">
+                <dcterms:W3CDTF>2010-08-17T19:09:06Z</dcterms:W3CDTF>
+              </dcterms:modified>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934559" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:16479008" />
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed:19690147" />
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/reactome:R-HSA-934559" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/GO:0004674" />
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code:2.7.11.1" />
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="true" id="speciesreference_934559_input_934550" sboTerm="SBO:0000010" species="species_934550" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_934559_input_113592" sboTerm="SBO:0000010" species="species_113592" stoichiometry="2" />
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="speciesreference_934559_output_934578" sboTerm="SBO:0000011" species="species_934578" stoichiometry="1" />
+          <speciesReference constant="true" id="speciesreference_934559_output_29370" sboTerm="SBO:0000011" species="species_29370" stoichiometry="2" />
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="modifierspeciesreference_934559_catalyst_947860" sboTerm="SBO:0000013" species="species_947860" />
+        </listOfModifiers>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
